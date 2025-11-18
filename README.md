@@ -1,5 +1,5 @@
-# 🚀 Future_Builders  
-### HCLTech Hackathon Project  
+# Future_Builders  
+### Wellness & Preventive Care Portal
 
 This project is a simple healthcare appointment and wellness management system designed for the **HCLTech Hackathon**.  
 The platform includes **three roles**: **Patient (User)**, **Doctor**, and **Admin**.  
@@ -22,38 +22,19 @@ Dashboard shows:
 - Upcoming appointments  
 - Past appointment summary  
 
-### 3. Search Doctors
+### 3. Book Appointment
 Patient can search based on:
 - Speciality (Cardiology, Orthopedics, etc.)  
-- Doctor name  
-- Experience range  
-
-Search results show specialties → doctors → available slots.
-
-### 4. Book Appointment
-Patient selects:
-- Speciality  
-- Doctor  
+- Doctor name
+- Check Availability
 - Date + Time slot  
-- Reason for visit  
+Search results show specialties → doctors → available slots.
 
 Appointment is created with:  
 **status = pending**
 
-### 5. Track Wellness
-Patient can log:
-- Water intake  
-- Steps  
-- Sleep  
-- Mood (optional)
 
-### 6. Message Doctor
-Patient can send health-related messages to doctors like:  
-> “I have a headache since morning.”
-
-Doctor will see these messages in their inbox.
-
-### 7. View Appointment Notes
+### 4. View Appointment Notes
 After the appointment is completed:
 - Doctor writes notes or prescription  
 - Patient can view notes inside appointment details  
@@ -89,11 +70,6 @@ For today’s accepted appointments:
 - Marks appointment as **completed**  
 - Notes become visible to patient  
 
-### 6. View Messages
-Doctor can view all messages from patients:
-- Sorted by latest  
-- Grouped by patient  
-
 ---
 
 ## 🔷 C. Admin Workflow
@@ -107,7 +83,6 @@ Admin can:
 
 **Note:**  
 Admin does not book appointments or write prescriptions.  
-Admin UI is optional for MVP.
 
 ---
 
@@ -127,16 +102,13 @@ Admin UI is optional for MVP.
 
 ### Patient Flow:
 Search doctor → Select speciality → Check slots → Book appointment →  
-Wait for acceptance → Attend appointment → View notes → Track wellness
+Wait for acceptance → Attend appointment → View notes
 
 ### Doctor Flow:
 Login → Check pending requests → Accept/Reject →  
-See today’s accepted appointments → Add notes/prescription → View messages
+See today’s accepted appointments → Add notes/prescription
 
 ### Admin Flow:
 Create doctors → Provide credentials → Manage doctor/patient accounts
 
----
 
-### ✔ Project by **Future_Builders**  
-### ✔ Built for **HCLTech Hackathon**  
