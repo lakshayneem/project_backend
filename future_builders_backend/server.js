@@ -10,7 +10,7 @@ import doctorAppointmentRoutes from "./routes/doctorAppointmentRoutes.js";
 import patientAppointmentRoutes from "./routes/patientAppointmentRoutes.js";
 import availabilityRoutes from "./routes/availabilityRoutes.js";
 import doctorRoutes from "./routes/doctorRoutes.js";
-
+import WellnessRoutes from "./routes/WellnessRoutes.js";
 
 dotenv.config();
 const app = express();
@@ -27,6 +27,7 @@ app.use("/api/doctor/appointments", doctorAppointmentRoutes);
 app.use("/api/patient/appointments", patientAppointmentRoutes);
 app.use("/api/doctor/availability", availabilityRoutes);
 app.use("/api/doctors", doctorRoutes);
+app.use("/api/patient/wellness", WellnessRoutes);
 app.get("/", (req, res) => {
   res.json({ message: "Future_Builders API is running" });
 });
